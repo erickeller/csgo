@@ -3,6 +3,7 @@ MAINTAINER Eric Keller <keller dot eric at gmail dot com>
 
 RUN apt update -y
 RUN apt-get dist-upgrade -y
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt install -y lib32gcc1 lib32stdc++6 curl
 
 ENV USER steam
